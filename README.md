@@ -13,7 +13,7 @@ The task is to build a simple webserver serving some simple API points, and hand
 2. Implement a basic routing mechanism to serve different endpoints with appropriate responses:
    * GET "/hello" returns string: "Hello, World!" and 200 OK
    * GET "/" returns 404 page not found
-   * GET "/greet/Mariusz" returns JSON `{ "greet": "Hello", "name": "Chris"}` and `200 OK`
+   * GET "/greet/Chris" returns JSON `{ "greet": "Hello", "name": "Chris"}` and `200 OK`
       * Note, the URL path above is only an example, the last element of the URL path is a parameter, that will be used a the name.
       * Your code should work for "/greet/Adam" (or whatever different name) and return appropriately, based on the parameter passed into it.
    * POST "/greetme" with JSON input `{ "input": "whatever text", "name": "Chris"}` returns JSON `{"greet": "whatever text", "name": "Chris"}`
